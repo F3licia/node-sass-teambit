@@ -1,0 +1,74 @@
+$font_family: 'arial';
+$primary-color: #fff;
+$secondary-color: #ffe7d2;
+$text-color:#58402c;
+$line-height: 60px;
+$titleweigth: bolder;
+$subtitleweight: lighter;
+
+@mixin block-style {
+    width: 100%;
+    min-height: 200px;   
+}
+
+@mixin horizontal-block {
+    display: flex;
+    justify-content:space-between;
+}
+
+@mixin middle-title{
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin textStyle{
+    color: $text-color;
+    line-height: $line-height;
+    text-transform: capitalize;
+}
+
+
+/*-----------------------------*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:$font_family;
+    border: 1px solid violet;
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, p, li {
+   @include textStyle()
+}
+
+h1{font-weight: $titleweigth}
+h3{font-weight: $subtitleweight}
+
+
+.main-block{ @include block-style;
+    &:nth-child(even){
+        background: $secondary-color
+        }
+    &:nth-child(odd){
+        background: $primary-color
+        }
+}
+.menu {
+    display: flex;
+    margin-top: 0;
+}
+li{ margin-right: 20px}
+
+.horiz-block{@include horizontal-block;}
+
+
+.middletext{@include middle-title}
+
+.block50{
+    width: 50%;
+}

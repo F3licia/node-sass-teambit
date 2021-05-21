@@ -1,0 +1,61 @@
+/*-----------------------------*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "arial";
+  border: 1px solid violet;
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, p, li {
+  color: #58402c;
+  line-height: 60px;
+  text-transform: capitalize;
+}
+
+h1 {
+  font-weight: bolder;
+}
+
+h3 {
+  font-weight: lighter;
+}
+
+.main-block {
+  width: 100%;
+  min-height: 200px;
+}
+.main-block:nth-child(even) {
+  background: #ffe7d2;
+}
+.main-block:nth-child(odd) {
+  background: #fff;
+}
+
+.menu {
+  display: flex;
+  margin-top: 0;
+}
+
+li {
+  margin-right: 20px;
+}
+
+.horiz-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.middletext {
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.block50 {
+  width: 50%;
+}
