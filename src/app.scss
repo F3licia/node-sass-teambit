@@ -131,6 +131,8 @@ h4, h5, h6, p {
 }
 
 .block50{
+    display: flex;
+    flex-direction: column;
     position: relative;
     width: 50%;
     & >*{
@@ -141,12 +143,19 @@ h4, h5, h6, p {
 
 .ill-block{
     position: relative;
-    width: 70%;
+    width: 55%;
     & >*{
         margin-top: 10px;
     }
-   
+    & >img {
+       width: 100%;
+    }
 }
+
+.flex-end{
+    align-self: flex-end;
+}
+
 
 .block33{
     width: 33,3%;
