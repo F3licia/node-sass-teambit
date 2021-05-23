@@ -13,11 +13,15 @@ $subtitleweight: lighter;
     padding-bottom: 20px;
     width: 100%;
 }
+@mixin wrapper{
+    padding-left: 100px;  
+    padding-right:100px;
+ 
+}
 
 @mixin block-flex {
     display: flex;
-    flex-wrap: wrap;
-  
+    flex-wrap: wrap; 
 }
 
 @mixin horizontal-block {
@@ -36,6 +40,28 @@ $subtitleweight: lighter;
 
 @mixin textStyle{
     color: $text-color;
+}
+
+@mixin button{
+    @include middle-title;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right:  auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: smaller;
+    line-height: 10px;
+    &>img {
+        max-width: 25px;
+    }
+    & >div{
+        height: auto;
+    }
 }
 
 /*-----------------------------*/
@@ -64,7 +90,8 @@ h4, h5, h6, p {
  }
 
 .main-block{
-    @include block-style;  
+    @include block-style;
+    @include wrapper;
         &:nth-child(even){
             background: $primary-color
             }
@@ -75,6 +102,7 @@ h4, h5, h6, p {
 
 .menu {
     @include horizontal-block;
+    @include wrapper();
     & >li {
         margin-right: 20px;
        }
@@ -99,7 +127,7 @@ h4, h5, h6, p {
     flex-wrap: wrap;
     align-items: center;
     & img {
-        width: 400px;
+        width: 300px;
         height: auto;
         }
 }
@@ -112,12 +140,9 @@ h4, h5, h6, p {
     }
 }
 
-
-
 .block33{
     width: 33,3%;
 }
-
 
 .trioimgsBlock{
     @include block-flex;
@@ -125,7 +150,7 @@ h4, h5, h6, p {
     justify-content: space-evenly;
     & img {
     width: auto;
-    height: 150px;
+    height: 100px;
     }
 }
 .text-box{
@@ -147,30 +172,12 @@ h4, h5, h6, p {
 
 }
 
-@mixin button{
-    @include middle-title;
-    margin-left: auto;
-    margin-right:  auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 150px;
-    height: 30px;
-    border-radius: 5px;
+
+.buttonB{
+    @include button;
     background-color: $blue-color;
     color: white;
-    font-size: smaller;
-    line-height: 10px;
-    &>img {
-        max-width: 25px;
-    }
-    & >div{
-        height: auto;
-    }
-}
-
-.button{
-    @include button;    
+    width: 130px
 }
 
 .buttons-block{
@@ -180,4 +187,12 @@ h4, h5, h6, p {
     width: 330px;
     align-items: center;
 
+}
+
+.buttonW{
+    @include button; 
+    background-color: white;
+    color: $blue-color;
+    border: 1px solid $blue-color;
+    width: 100px;    
 }
