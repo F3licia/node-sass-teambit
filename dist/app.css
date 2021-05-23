@@ -4,8 +4,13 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "arial";
-  border: 1px solid violet;
   list-style: none;
+}
+
+.hr {
+  border-bottom: 1px solid #58402c;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 img {
@@ -67,6 +72,7 @@ h4, h5, h6, p {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 60px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -105,6 +111,10 @@ h4, h5, h6, p {
 
 .block33 {
   width: 33, 3%;
+}
+
+.block1-8 {
+  width: calc(100% / 8);
 }
 
 .trioimgsBlock {
@@ -203,4 +213,33 @@ h4, h5, h6, p {
 }
 .buttonW > div {
   height: auto;
+}
+
+.footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.footer img {
+  height: 100%;
+  max-width: 40px;
+  margin-right: 10px;
+}
+.footer > div {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.first-col {
+  height: 60px;
+  width: 30%;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  min-width: calc(100% / 8);
 }
