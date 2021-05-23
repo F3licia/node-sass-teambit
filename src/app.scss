@@ -134,8 +134,18 @@ h4, h5, h6, p {
     position: relative;
     width: 50%;
     & >*{
+        margin-top: 20px;
+    }
+    
+}
+
+.ill-block{
+    position: relative;
+    width: 70%;
+    & >*{
         margin-top: 10px;
     }
+   
 }
 
 .block33{
