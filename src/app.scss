@@ -8,12 +8,18 @@ $subtitleweight: lighter;
 
 @mixin block-style {
     width: 100%;
-    min-height: 200px;   
+    min-height: 200px; 
+}
+
+@mixin block-flex {
+    display: flex;
+    flex: wrap;
 }
 
 @mixin horizontal-block {
     display: flex;
     justify-content:space-between;
+    
 }
 
 @mixin middle-title{
@@ -31,7 +37,6 @@ $subtitleweight: lighter;
     text-transform: capitalize;
 }
 
-
 /*-----------------------------*/
 *{
     padding: 0;
@@ -42,6 +47,10 @@ $subtitleweight: lighter;
     list-style: none;
 }
 
+img{
+    width: 100%;
+}
+
 h1, h2, h3, h4, h5, h6, p, li {
    @include textStyle()
 }
@@ -50,25 +59,73 @@ h1{font-weight: $titleweigth}
 h3{font-weight: $subtitleweight}
 
 
-.main-block{ @include block-style;
-    &:nth-child(even){
-        background: $secondary-color
-        }
-    &:nth-child(odd){
-        background: $primary-color
-        }
+.main-block{
+    @include block-style;  
+        &:nth-child(even){
+            background: $primary-color
+            }
+        &:nth-child(odd){
+            background: $secondary-color
+            }
 }
+
 .menu {
-    display: flex;
-    margin-top: 0;
+    @include horizontal-block;
+    & >li {
+        margin-right: 20px;
+        font-weight: 600;}
+         & >li {
+             font-size: smaller;
+        margin-right: 20px;
+        font-weight: 600;}
 }
-li{ margin-right: 20px}
+.flex{@include block-flex}
 
-.horiz-block{@include horizontal-block;}
-
-
-.middletext{@include middle-title}
+.block100{
+    @include middle-title;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    & img {
+        width: 400px;
+        height: auto;
+        }
+}
 
 .block50{
+    position: relative;
     width: 50%;
+    &.small {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+.block33{
+    width: 33,3%;
+}
+
+
+.trioimgsBlock{
+    @include block-flex;
+    display: flex;
+    justify-content: space-evenly;
+    & img {
+    width: auto;
+    height: 150px;
+    }
+}
+.text-box{
+    font-size:smaller;
+    padding: 30px;
+    line-height: normal;
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border: 1px solid blue;
+    border-radius: 20px;
+
 }
