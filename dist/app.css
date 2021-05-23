@@ -38,19 +38,17 @@ h4, h5, h6, p {
   background: #ffe7d2;
 }
 
-.menu {
-  display: flex;
-  justify-content: space-between;
+.header {
   padding-left: 100px;
   padding-right: 100px;
 }
-.menu > li {
-  margin-right: 20px;
+
+.menu {
+  display: flex;
+  justify-content: space-between;
 }
 .menu > li {
-  font-size: smaller;
   margin-right: 20px;
-  font-weight: 600;
 }
 
 .logo-container {
@@ -117,6 +115,7 @@ h4, h5, h6, p {
   border-radius: 20px;
 }
 .text-box > img {
+  margin-right: 10px;
   height: 40px;
   width: auto;
 }
