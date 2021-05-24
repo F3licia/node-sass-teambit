@@ -7,6 +7,11 @@
   list-style: none;
 }
 
+a {
+  color: #2e4790;
+  text-decoration: none;
+}
+
 .hr {
   border-bottom: 1px solid #58402c;
   margin-top: 20px;
@@ -99,7 +104,7 @@ h4, h5, h6, p {
   width: 55%;
 }
 .ill-block > * {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 .ill-block > img {
   width: 100%;
@@ -153,13 +158,14 @@ h4, h5, h6, p {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  padding: 4px;
   margin-top: auto;
   margin-bottom: auto;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   min-width: 100px;
   height: 30px;
   border-radius: 5px;
@@ -167,10 +173,11 @@ h4, h5, h6, p {
   line-height: 10px;
   background-color: #2e4790;
   color: white;
-  width: 130px;
+  width: 150px;
 }
 .buttonB > img {
-  max-width: 25px;
+  max-width: 20px;
+  margin-right: 5px;
 }
 .buttonB > div {
   height: auto;
@@ -191,13 +198,14 @@ h4, h5, h6, p {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  padding: 4px;
   margin-top: auto;
   margin-bottom: auto;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   min-width: 100px;
   height: 30px;
   border-radius: 5px;
@@ -209,7 +217,8 @@ h4, h5, h6, p {
   width: 100px;
 }
 .buttonW > img {
-  max-width: 25px;
+  max-width: 20px;
+  margin-right: 5px;
 }
 .buttonW > div {
   height: auto;
@@ -223,7 +232,7 @@ h4, h5, h6, p {
   padding-right: 100px;
 }
 .footer img {
-  height: 100%;
+  height: 40px;
   max-width: 40px;
   margin-right: 10px;
 }
@@ -233,7 +242,8 @@ h4, h5, h6, p {
 }
 
 .first-col {
-  height: 60px;
+  align-self: flex-start;
+  height: 100px;
   width: 30%;
 }
 

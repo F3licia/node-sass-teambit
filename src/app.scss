@@ -45,20 +45,22 @@ $column: calc(100% / 8);
 
 @mixin button{
     @include middle-title;
+    padding: 4px;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
     margin-right:  auto;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     min-width: 100px;
     height: 30px;
     border-radius: 5px;
     font-size: smaller;
     line-height: 10px;
     &>img {
-        max-width: 25px;
+        max-width: 20px;
+        margin-right: 5px;
     }
     & >div{
         height: auto;
@@ -73,6 +75,12 @@ $column: calc(100% / 8);
     box-sizing: border-box;
     font-family:$font_family;
     list-style: none;
+}
+
+a{
+    color:$blue-color;
+    text-decoration: none;
+
 }
 
 .hr{
@@ -153,7 +161,7 @@ h4, h5, h6, p {
     position: relative;
     width: 55%;
     & >*{
-        margin-top: 10px;
+        margin-top: 20px;
     }
     & >img {
        width: 100%;
@@ -208,7 +216,7 @@ h4, h5, h6, p {
     @include button;
     background-color: $blue-color;
     color: white;
-    width: 130px
+    width: 150px
 }
 
 .buttons-block{
@@ -230,7 +238,7 @@ h4, h5, h6, p {
     @include block-style;
     @include wrapper;
     & img{
-        height: 100%;
+        height: 40px;
         max-width: 40px;
         margin-right: 10px;
     }
@@ -240,7 +248,8 @@ h4, h5, h6, p {
     }
 }
 .first-col{
-    height: 60px;
+    align-self: flex-start;
+    height: 100px;
     width: 30%;
 }
 
