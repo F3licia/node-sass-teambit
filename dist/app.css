@@ -13,7 +13,7 @@ a {
 }
 
 .hr {
-  border-bottom: 1px solid #58402c;
+  border-bottom: 1px solid #0e14ee;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -22,21 +22,27 @@ img {
   width: 100%;
 }
 
-h1, h2, h3, li {
-  color: #58402c;
+h1 {
+  color: #0e14ee;
   font-weight: bolder;
   line-height: 60px;
 }
 
+h2, h3, li {
+  color: #0e14ee;
+  font-weight: bolder;
+  line-height: normal;
+}
+
 h4, h5, h6, p {
-  color: #58402c;
+  color: #0e14ee;
   font-weight: lighter;
   line-height: 20px;
 }
 
 .main-block {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   width: 100%;
   padding-left: 100px;
   padding-right: 100px;
@@ -45,7 +51,7 @@ h4, h5, h6, p {
   background: #fff;
 }
 .main-block:nth-child(odd) {
-  background: #ffe7d2;
+  background: #0414ae;
 }
 
 .header {
@@ -59,6 +65,8 @@ h4, h5, h6, p {
 }
 .menu > li {
   margin-right: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .logo-container {
@@ -97,6 +105,9 @@ h4, h5, h6, p {
 }
 .block50 > * {
   margin-top: 20px;
+}
+.block50:first-child {
+  padding-right: 60px;
 }
 
 .ill-block {
@@ -170,6 +181,7 @@ h4, h5, h6, p {
   background-color: #2e4790;
   color: white;
   width: 150px;
+  margin-bottom: 20px;
 }
 .buttonB > img {
   max-width: 20px;
@@ -221,15 +233,15 @@ h4, h5, h6, p {
 }
 
 .footer {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   width: 100%;
   padding-left: 100px;
   padding-right: 100px;
 }
 .footer img {
   height: 40px;
-  max-width: 40px;
+  width: auto;
   margin-right: 10px;
 }
 .footer > div {
@@ -239,6 +251,7 @@ h4, h5, h6, p {
 
 .first-col {
   align-self: flex-start;
+  padding-right: 20px;
   height: 100px;
   width: 30%;
 }

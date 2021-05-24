@@ -1,8 +1,8 @@
 $font_family: 'arial';
 $primary-color: #fff;
-$secondary-color: #ffe7d2;
+$secondary-color: #0414ae;
 $blue-color: #2e4790;
-$text-color:#58402c;
+$text-color:#0e14ee;
 $line-height-main: 60px;
 $line-height-sub: 20px;
 $titleweigth: bolder;
@@ -10,14 +10,13 @@ $subtitleweight: lighter;
 $column: calc(100% / 8);
 
 @mixin block-style {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     width: 100%;
 }
 @mixin wrapper{
     padding-left: 100px;  
     padding-right:100px;
- 
 }
 
 @mixin block-flex {
@@ -27,8 +26,7 @@ $column: calc(100% / 8);
 
 @mixin horizontal-block {
     display: flex;
-    justify-content:space-between;
-    
+    justify-content:space-between;   
 }
 
 @mixin middle-title{
@@ -80,7 +78,6 @@ $column: calc(100% / 8);
 a{
     color:$blue-color;
     text-decoration: none;
-
 }
 
 .hr{
@@ -93,11 +90,16 @@ img{
     width: 100%;
 }
 
-h1, h2, h3, li{
+h1 {
    @include textStyle;
    font-weight: $titleweigth;
    line-height: $line-height-main
 }
+h2, h3 , li{
+    @include textStyle;
+    font-weight: $titleweigth;
+    line-height: normal
+ }
 h4, h5, h6, p {
     @include textStyle;
     font-weight: $subtitleweight;
@@ -122,6 +124,8 @@ h4, h5, h6, p {
     @include horizontal-block;
     & >li {
         margin-right: 20px;
+        margin-top: auto;
+        margin-bottom: auto;
        }   
 }
 
@@ -154,6 +158,9 @@ h4, h5, h6, p {
     & >*{
         margin-top: 20px;
     }
+    &:first-child{
+        padding-right: 60px;
+    }
     
 }
 
@@ -171,7 +178,6 @@ h4, h5, h6, p {
 .flex-end{
     align-self: flex-end;
 }
-
 
 .block33{
     width: 33,3%;
@@ -210,7 +216,8 @@ h4, h5, h6, p {
     @include button;
     background-color: $blue-color;
     color: white;
-    width: 150px
+    width: 150px;
+    margin-bottom: 20px
 }
 
 .buttons-block{
@@ -233,7 +240,7 @@ h4, h5, h6, p {
     @include wrapper;
     & img{
         height: 40px;
-        max-width: 40px;
+        width: auto;
         margin-right: 10px;
     }
     & >div {
@@ -243,6 +250,7 @@ h4, h5, h6, p {
 }
 .first-col{
     align-self: flex-start;
+    padding-right: 20px;;
     height: 100px;
     width: 30%;
 }
