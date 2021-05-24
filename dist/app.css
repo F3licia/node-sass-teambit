@@ -118,10 +118,6 @@ h4, h5, h6, p {
   width: 33, 3%;
 }
 
-.block1-8 {
-  width: calc(100% / 8);
-}
-
 .trioimgsBlock {
   display: flex;
   flex-wrap: wrap;
