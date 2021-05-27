@@ -1,0 +1,35 @@
+
+.header{
+    margin-left: 200px ;
+    margin-right: 200px;
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $text-color;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: auto;
+}
+
+.navbar ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul >*{
+  margin-left: 30px;
+}
+
+.nav-button{
+    color: $blue-color;
+    border:1px solid $blue-color;
+    background-color: transparent;
+}
+
+

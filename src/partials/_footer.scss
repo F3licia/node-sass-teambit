@@ -1,0 +1,32 @@
+.footer div{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+.credits{
+    display: flex;
+    width: 30%;
+  
+}
+
+.site-items{
+    display: flex;
+    width: 70%;
+}
+
+.col{
+    
+    width: calc(100% / 5);
+    & ul{
+        list-style: none;
+    }
+    
+}
+
+.mini-logo{
+display: flex;
+align-items: flex-start;
+margin-right: 15px;
+}
